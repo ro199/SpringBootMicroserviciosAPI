@@ -1,0 +1,19 @@
+## YAML Template.
+server:
+    port: 8081
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER:http://localhost:8761/eureka}
+spring: 
+  application:
+    name: businessdomain-customer
+  
+management: 
+  endpoints:
+    web:
+      exposure:
+        include: "*"  
+  endpoint:
+    health:
+      show-details: ALWAYS
