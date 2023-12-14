@@ -29,7 +29,7 @@ import java.util.Optional;
  *
  * @author sotobotero
  */
-@Tag(name = "Billing API", description = "This APi serve all functionality for management Invoices")
+@Tag(name = "Billing API", description = "This APi serve all functionality for management Invoices")//Nos permite definir un nombre y sus atributos
 @RestController
 @RequestMapping("/billing")
 public class InvoiceRestController {
